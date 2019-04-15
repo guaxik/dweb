@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Zero Rage</title>
+</head>
+
+<body>
+    <header id="cabeca">
+        <div class="grid cabeca">
+
+
+            <a class="logo-link" href="index.html">
+                <img class="projeto" src="./images/logo.png" alt="logomarca">
+            </a>
+
+            <nav class="local-menu">
+
+                <ul class="menu-principal">
+                    <!--se cliclar no link "fazer login" abre pop up-->
+                    <li class="menu-principal--item">
+                        <a onclick="document.getElementById('id01').style.display='block'" style="width:auto"
+                            class="menu-principal--link" href="#cabeca">Fazer login</a>
+                    </li>
+
+                    <li class="menu-principal--item">
+                        <a class="menu-principal--link" href="#assuntos">Explorar</a>
+
+                    </li>
+
+                    <li class="menu-principal--item">
+                        <a class="menu-principal--link" href="#indice">Perdido?</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+
+    </header>
+
+    <!--FIM DA CABEÇA DO SITE,NELE TEM OS LINKS PARA ACESSAR OS ASSUNTOS E PARA FAZER LOGUIN-->
+
+    <section id="home" class="secao-pagina">
+        <div class="grid home">
+            <div class="home-textos">
+                <h1 class="titulo"><span class="texto-pequeno">Está cansado de ficar</span><br>negativo nas partidas?
+                </h1>
+                <a href="#assuntos" class="botao principal">GG OP!</a>
+            </div>
+        </div>
+    </section>
+
+    <!--spam elemento de linha-->
+
+    <section id="assuntos" class="parte principal">
+
+        <h2 class="titulo-um">O que preciso saber?
+
+        </h2>
+
+        <div class="grid assuntos">
+
+
+            <div class="icone centralizado position">
+                <div class="icone">
+                    <img class="resposive-img" src="./images/topico_01.png" alt="Ícone com as rotas do jogo">
+                </div>
+                <div class="icone-descrição">
+
+                </div>
+
+                <p class="descricao">
+                    Posicionamento é super importante em seu jogo, saber as rotas e qual melhor lane para começar a
+                    jogar.
+                </p>
+            </div>
+
+
+
+            <div class="icone centralizado farme">
+                <div class="icone">
+                    <img class="resposive-img" src="./images/topico 03.png" alt="Ícone representando um champ com medo">
+                </div>
+                <div class="icone-descrição">
+
+                </div>
+                <p class="descricao">
+                    Para crescer no jogo é bom saber o momento de atacar tropa inimiga e como conseguir gold.
+                </p>
+            </div>
+
+
+            <div class="icone centralizado campeão">
+                <div class="icone">
+                    <img class="resposive-img" src="./images/topico 02.png" alt="Ícone representando um champ.">
+                </div>
+                <div class="icone-descrição">
+
+                </div>
+                <p class="descricao">
+                    Conheça aqui os campeões, suas histórias e melhores composições para seu jogo.
+                </p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--fim dos assuntos do site-->
+
+
+    <section id="indice" class="indice">
+        <h2 class="titulo-secao">Links de referência</h2>
+        <div class="grid links">
+            <div class="link">
+                <h3>Campeão</h3>
+                <a href="#">
+                    História
+                </a>
+
+                <a href="#">
+                    Classificação
+                </a>
+
+                <a href="#">
+                    Runas
+                </a>
+
+
+
+            </div>
+            <div class="link">
+                <h3>Posição</h3>
+
+                <a href="#">
+                    Movimentação
+                </a>
+
+                <a href="#">
+                    Rotas
+                </a>
+
+                <a href="#">
+                    Conheça a jungle
+                </a>
+
+
+
+            </div>
+            <div class="link">
+                <h3>Farme</h3>
+                <a href="#">
+                    Tempo
+                </a>
+
+                <a href="#">
+                    Quantidade
+                </a>
+
+                <a href="#">
+                    Last hit
+                </a>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <!--fim dos links para pesquisa rápida-->
+
+
+
+
+    <footer class="pagina-rodape">
+        <div class="copy">
+            &copy; 2019.Karol/Leandro
+        </div>
+        <div class="social-links">
+
+        </div>
+
+    </footer>
+    <!--fim do copyright-->
+
+    <!--modal-->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="images/log icon .png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Usuário</b></label>
+                <input type="text" placeholder="Email ou Usuário" name="uname" required>
+
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="senha" name="psw" required>
+
+                <button class="botao-login" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Esqueci a senha</a></span>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>
